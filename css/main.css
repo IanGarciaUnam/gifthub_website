@@ -1,24 +1,19 @@
 html {
 	font-size: 16px;
 	background-color: #000000;
-	
-}
-.mi_img{
-
-background-size: contain;	
-
-vertical-align:middle;
-
+  height: 100%;
 }
 
-.mi_img img{
-display:block;
+.mi_img {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-margin:11%;
-max-width: 70%;
-    height: auto;
-  
-
+.mi_img img {
+  width: 500px;
+  max-width: 80%;
 }
 
 .social-bar {
@@ -33,6 +28,7 @@ max-width: 70%;
 }
 
 .icon {
+  /*color: #000000;*/
 	color: white;
 	text-decoration: none;
 	padding: .7rem;
@@ -41,6 +37,7 @@ max-width: 70%;
 }
 
 .icon-facebook {
+  /*background: #60b9bb;*/
 	background: #2E406E;
 }
 
@@ -53,6 +50,7 @@ max-width: 70%;
 }
 
 .icon-instagram {
+  /*background: #e35a89;*/
 	background: #C72862;
 }
 
