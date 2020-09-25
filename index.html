@@ -15,8 +15,22 @@
 		</div>
 
 	  <div class="social-bar">
-      <a href="https://www.facebook.com/GiftHii-102274621632042" class="icon icon-facebook" target="_blank"></a>
+      <a href="https://www.facebook.com/GiftHii-102274621632042" class="icon icon-facebook" target="_blank" id="facebook-url"></a>
   	  <a href="https://www.instagram.com/gifthiioficial" class="icon icon-instagram" target="_blank"></a>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var facebookUrl = document.getElementById('facebook-url');
+
+        if (/Android/i.test(navigator.userAgent)) {
+          facebookUrl.href = "fb://page/102274621632042";
+        }
+
+        if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+          facebookUrl.href = "fb://page/102274621632042";
+        }
+      });
+    </script>
 	</body>
 </html>
